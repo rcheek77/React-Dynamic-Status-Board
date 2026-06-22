@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 245, 255);
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header stying */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the failed status  */
+.status-failed {
+  background-color: #ff9696;
+  color: #b40012;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+/* Style for the completed status  */
+.status-completed {
+  background-color: #a6f8b9;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+/* Style for the in-progress status  */
+.status-in-progress {
+  background-color: #f3e2aa;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.ticket-item:hover {
+  box-shadow: 0px 0px 5px 5px rgba(204, 204, 204, 1);
+  transform: scale(1.05);
+}
+
+.ticket-info {
+  box-shadow: 0px 0px 5px 2px rgba(204, 204, 204, 1);
+  transition: box-shadow, transform 0.5s ease;
+}
+
+.ticket-info:hover {
+  box-shadow: 0px 0px 5px 5px rgba(204, 204, 204, 1);
+  transform: scale(1.05);
+}
+
+.status-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: Arial;
+
+}
+
+.w-hr {
+  padding: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: none;  
+}
