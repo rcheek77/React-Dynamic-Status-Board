@@ -18,7 +18,7 @@ export const TicketInfo = ({tickets, result, image, children}) => {         // n
             {count !== undefined && count > 0 ? (         // if count is not undefined and is greater than 0,
               <p>Number of tickets {result}: {count}</p>  // display actual number of tickets, 
             ) : (
-              <p>Number tickets {result}.</p>             // or, if count is 0, display "no tickets" message
+              <p>No tickets {result}.</p>             // or, if count is 0, display "no tickets" message
             )}
           </>
         ) : (                                             // or, if show is false, display an empty string to hide details 
